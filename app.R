@@ -138,15 +138,13 @@ data_live <- list(ok = data_live_ok,
                   bs = data_live_bs)
 
 # Past Data
-ok <- rbind(read_csv("Okoboji_Data_1.csv"),
+data <- list(ok = rbind(read_csv("Okoboji_Data_1.csv"),
   read_csv("Okoboji_Data_2.csv"),
   read_csv("Okoboji_Data_3.csv"),
   read_csv("Okoboji_Data_4.csv")) %>% 
-  mutate(datetime = as.POSIXct(datetime))
-
-data <- list(ok = ok,
-             bs = read_csv("Big_Spirit_Data.csv") %>% 
-               mutate(datetime = as.POSIXct(datetime)))
+    mutate(datetime = as.POSIXct(datetime)),
+  bs = read_csv("Big_Spirit_Data.csv") %>% 
+    mutate(datetime = as.POSIXct(datetime)))
 
 # Yearly Summary for Okoboji
 summer <- read_csv("yearly_summary.csv")

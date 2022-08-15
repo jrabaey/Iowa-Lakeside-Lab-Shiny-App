@@ -1,0 +1,13 @@
+name: Iowa_Lakeside_Lab_Buoy_Data
+title: Iowa_Lakeside_Lab_Buoy_Data
+username:
+account: jrabaey
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6789294
+bundleId: 6204367
+url: https://jrabaey.shinyapps.io/Iowa_Lakeside_Lab_Buoy_Data/
+when: 1660602590.23584
+lastSyncTime: 1660602590.23584
+asMultiple: FALSE
+asStatic: FALSE
